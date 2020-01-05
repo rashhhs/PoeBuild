@@ -1,0 +1,27 @@
+
+- Create Fragment list with:
+   - RecyclerView that change between different sources (tables depending the filter that has been choosen)
+   - Unit test of the fragment list:
+     1. When you click on a filter the list should filter by the clicked button
+     2. When you click on a filter the other toggle button have to be unchecked
+     3. If the user clicks on a checked filter, this filters hasn't uncheck
+- Retrofit2 more testing!!!:
+    - Take a look this url, and check if is good the way they test the retrofit: https://stackoverflow.com/questions/34740665/how-to-mock-services-with-retrofit-2-0-and-the-new-mockretrofit-class
+- Issues with Mockito-Kotlin and/or Mockito-Inline with Mockito-Android. There seems an issue with the annotations
+
+
+*** KNOWN ISSUES *********
+
+1. Pagination. When you change between filters. The list of values showed on the screen aren't the first one (loadInitial). Why? Seems to be an issue with the pageSize but not sure at all
+
+***** NICE FEATURES TO ADD ****
+1. Multi line strings on real big queries Room Database. Cargo queries on Retrofit are unable to use that feature
+   """
+   |SELECT *
+   | FROM users
+   |WHERE name LIKE 'Jake %'
+   |""".trimMargin())
+
+**** OTHER TIPS *****
+
+1. There has a really odd way how the pagedList shows the list after submitting the new values. And why when you choose bad the number of pageSize, it shows wrong the page number (page number = set of values)
