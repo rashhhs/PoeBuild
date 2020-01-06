@@ -4,7 +4,7 @@ Future companion app for Path of Exile
 
 # Features
 
-# Tech Stack
+### Tech Stack
 
 1. Kotlin and MVVM
 2. Androidx (Constraint Layouts, Paging)
