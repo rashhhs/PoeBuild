@@ -4,6 +4,8 @@ Future companion app for Path of Exile
 
 # Features
 
+In development
+
 ### Tech Stack
 
 1. Kotlin and MVVM
